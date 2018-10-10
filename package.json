@@ -1,0 +1,13 @@
+{
+  "name": "robbie",
+  "version": "1.0.0",
+  "description": "facebook chat bot",
+  "main": "app.ts",
+  "repository": "https://gitlab.com/jkrivosija/robbie.git",
+  "author": "Jovica <jovicabit@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.6.16",
+    "express": "^4.16.3"
+  }
+}
