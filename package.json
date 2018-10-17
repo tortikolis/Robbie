@@ -2,7 +2,7 @@
   "name": "robbie",
   "version": "1.0.0",
   "description": "facebook chat bot",
-  "main": "app.ts",
+  "main": "bot.js",
   "repository": "https://gitlab.com/jkrivosija/robbie.git",
   "author": "Jovica <jovicabit@gmail.com>",
   "license": "MIT",
