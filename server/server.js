@@ -9,5 +9,7 @@ module.exports = (controller) => {
         console.log(`server is running at port ${process.env.PORT || 3000}`);
     });
     webhook(server, controller);
+    controller.webserver = server;
+    return server;
 };
 //# sourceMappingURL=server.js.map

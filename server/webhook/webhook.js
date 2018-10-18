@@ -12,6 +12,9 @@ module.exports = (server, controller) => {
     });
     server.post('/facebook/receive', (req, res, next) => {
         res.status(200).send('ok');
+        var bot = controller.spawn({});
+        // Now, pass the webhook into be processed
+        controller.handleWebhookPayload(req, res, bot);
     });
 };
 //# sourceMappingURL=webhook.js.map

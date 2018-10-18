@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const webhook = require('./webhook/webhook');
 
-module.exports = (controller : Object) => {
+module.exports = (controller) => {
   const server = express();
 
   server.use(bodyParser.json());
@@ -13,4 +13,7 @@ module.exports = (controller : Object) => {
 })
 
   webhook(server, controller);
+
+  controller.webserver = server;
+  return server;
 }
