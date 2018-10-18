@@ -6,8 +6,10 @@ const convoStrings: object = {
   initialWelcome: 'Hello, my name is Robbie and I can make you laugh! Welcome!',
 
   jokeConvo: 'Sure! Do you want random joke or specific one from some of categories:',
-  
+
   askCategories: ['explicit', 'nerdy'],
+
+  endConvo: 'Anytime! Happy to make your day...',
 }
 
 module.exports = convoStrings;
