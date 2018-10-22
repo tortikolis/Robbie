@@ -1,24 +1,22 @@
-//const categories = require('../../services/categories/categoryService');
 const jokeRequest = require('../../constants/hearWords/hearWords').joke;
 const jokeConvo = require('../../constants/convoStrings/convoStrings').jokeConvo;
-const askCategories = require('../../constants/convoStrings/convoStrings').askCategories;
 const getJoke = require('../../services/getData/getData').getJoke;
+const jokeAttachment = require('../../constants/attachments/attachments').jokeAttachment;
+const hearCategory = require('../../constants/hearWords/hearWords').category;
+const getCategoryFromString = require('../../helpers/helpers').getCategoryFromString;
 module.exports = (controller) => {
-    controller.hears(jokeRequest, 'message_received', function (bot, message) {
-        bot.startConversation(message, (err, convo) => {
-            convo.say(jokeConvo);
-            //ask izdvojiti u posebnu rekurzivnu funkciju ili ponuditi dugmad kategorije
-            convo.ask(askCategories, (response, convo) => {
-                if (askCategories.includes(response.text)) {
-                    getJoke(response.text)
-                        .then((jokeRes) => {
-                        convo.say(`Here it is: ${jokeRes}`);
-                        convo.next();
-                    });
-                }
-                else {
-                    //ponoviti ask
-                }
+    controller.hears(jokeRequest, 'message_received', (bot, message) => {
+        bot.startConversation(message, (err, conversation) => {
+            conversation.say(jokeConvo);
+            conversation.say({ attachment: jokeAttachment });
+            controller.hears(hearCategory, 'message_received, facebook_postback', (bot, message) => {
+                const category = message.payload || getCategoryFromString(message.text);
+                console.log(category);
+                getJoke(category)
+                    .then((jokeRes) => {
+                    bot.replyWithTyping(message, `Here it is: ${jokeRes}`);
+                    conversation.next();
+                });
             });
         });
     });
