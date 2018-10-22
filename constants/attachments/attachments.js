@@ -49,6 +49,29 @@ const attachments = {
                 },
             ]
         }
+    },
+    welcomeAttachment: {
+        'type': 'template',
+        'payload': {
+            'template_type': 'generic',
+            'elements': [
+                {
+                    'title': 'Choose one:',
+                    'buttons': [
+                        {
+                            'type': 'postback',
+                            'title': 'joke',
+                            'payload': 'joke'
+                        },
+                        {
+                            'type': 'postback',
+                            'title': 'prank',
+                            'payload': 'prank'
+                        },
+                    ]
+                },
+            ]
+        }
     }
 };
 module.exports = attachments;

@@ -1,4 +1,4 @@
-const Botkit: any = require('botkit');
+const Botkit = require('botkit');
 const initial = require('./conversations/initial/initial');
 const greeting = require('./conversations/greeting/greeting');
 const joke = require('./conversations/joke/joke');

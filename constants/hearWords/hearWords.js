@@ -1,9 +1,9 @@
 const hearWords = {
-    greeting: ['hello', 'hi', 'howdy', 'cao', 'hola', 'hey'],
+    greeting: ['hello', 'hi', 'howdy', 'cao', 'hola', 'hey', 'start', 'started', 'question', 'chat', 'available', 'started'],
     joke: ['joke', 'jest', 'fun', 'funny', 'chuck', 'noris'],
     prank: ['prank', 'gig'],
     more: ['more', 'another'],
-    end: ['ok', 'thanks', 'great'],
+    end: ['thank', 'great'],
     category: ['explicit', 'nerdy', 'random']
 };
 module.exports = hearWords;
