@@ -4,18 +4,23 @@ const apiEndpoints = require('../../constants/endpoints/endpoints');
 
 class GetData {
   
-  getCategoryJoke(category){
-    const endpoint: string = `${apiEndpoints.categoryJoke}[${category}]`;
-    return fetchData(endpoint).then((data) => data.value.joke)
+  getJoke(category: string){
+    const endpoint: string = category === 'random' ?
+    apiEndpoints.randomJoke :
+    `${apiEndpoints.categoryJoke}[${category}]`;
+    
+    return fetchData(endpoint).then((data) => data.joke)
   }
 
   getRandomJoke(){
     const endpoint: string = apiEndpoints.randomJoke;
-    return fetchData(endpoint).then((data) => data.value.joke)
+    return fetchData(endpoint).then((data) => data.joke)
   }
 
-  getPrank(name){
-
+  getPrank(category: string, firstName: string, lastName: string){
+    const endpoint: string = `${apiEndpoints.randomJoke}?exclude[${category}?&firstName=${firstName}&lastName=${lastName}`;
+    console.log(endpoint);
+    return fetchData(endpoint).then((data) => data.joke)
   }
 }
 

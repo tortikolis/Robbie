@@ -1,7 +1,4 @@
-// const strings = {
-//   greetingMsg: ['hello', 'hi', 'howdy', 'cao', 'hola', 'hey'],
-//   convoStrings: ['Hi there, let me introduce myself. My name is Robbie and I am funny bot!', 'What can I do for you?']
-// }
+
 const greetingMsg = require('../../constants/hearWords/hearWords').greeting;
 const greetingConvo = require('../../constants/convoStrings/convoStrings').greetingConvo;
 

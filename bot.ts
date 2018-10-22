@@ -12,7 +12,6 @@ const controller = Botkit.facebookbot({
 })
  
 const server = require('./server/server')(controller);
-console.log(greeting(controller));
 
 initial(controller);
 greeting(controller);
