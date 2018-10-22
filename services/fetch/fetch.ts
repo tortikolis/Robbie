@@ -5,4 +5,8 @@ module.exports = (url: string) => {
   return fetch(url)
   .then((res) => res.json())
   .then((data) => new Joke(data.value.joke))
+  .catch((err) => {
+      console.log(`There has been error during fetch: ${err}`);
+      return err;
+  })
 }

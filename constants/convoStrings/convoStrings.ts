@@ -14,7 +14,7 @@ const convoStrings: object = {
   prankConvo: {
     category: 'Sure! Choose a joke category for a prank?',
     firstName: 'What’s your friend first name?',
-    badFirstName: 'This does not look like a real name let’s try again. What’s your friend first name?',
+    badName: 'This does not look like a real name let’s try again. What’s your friend first name?',
     lastName: 'What’s your friend last name?',
     
   }

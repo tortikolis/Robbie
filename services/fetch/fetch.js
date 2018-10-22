@@ -3,6 +3,10 @@ module.exports = (url) => {
     const Joke = require('../../entities/joke');
     return fetch(url)
         .then((res) => res.json())
-        .then((data) => new Joke(data.value.joke));
+        .then((data) => new Joke(data.value.joke))
+        .catch((err) => {
+        console.log(`There has been error during fetch: ${err}`);
+        return err;
+    });
 };
 //# sourceMappingURL=fetch.js.map

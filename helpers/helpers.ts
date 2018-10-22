@@ -9,7 +9,15 @@ module.exports = {
         } else if (str.includes('nerdy' || 'Nerdy')){
             category = 'nerdy';
         } 
-
         return category;
+    },
+
+    capitalizeWords: (word: string) => {
+        return word[0] + word.slice(1);
+    },
+
+    checkIfOnlyLetters: (str: string) => {
+        const regEx = /^[a-zA-Z\s]*$/;
+        return regEx.test(str);
     }
 }

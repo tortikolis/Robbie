@@ -5,17 +5,15 @@ const jokeAttachment = require('../../constants/attachments/attachments').jokeAt
 const hearCategory = require('../../constants/hearWords/hearWords').category;
 const getCategoryFromString = require('../../helpers/helpers').getCategoryFromString;
 
-module.exports = (controller: any) => {
-  
+module.exports = (controller : any) => {
   controller.hears(jokeRequest, 'message_received', (bot: any, message: any) => {
     bot.startConversation(message, (err: Error, conversation: any) => {
       conversation.say(jokeConvo);
       conversation.say({ attachment : jokeAttachment }) 
       
-      controller.hears(hearCategory, 'message_received, facebook_postback', (bot, message) => {
+      controller.hears(hearCategory, 'message_received, facebook_postback', (bot: any, message: any) => {
         const category = message.payload || getCategoryFromString(message.text);
-        console.log(category);
-        
+
         getJoke(category)
               .then((jokeRes) => {
                   bot.replyWithTyping(message,`Here it is: ${jokeRes}`);

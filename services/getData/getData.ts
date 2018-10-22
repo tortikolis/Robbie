@@ -1,6 +1,6 @@
 const fetchData = require('../fetch/fetch');
 const apiEndpoints = require('../../constants/endpoints/endpoints');
-
+const capitalizeName = require('../../helpers/helpers').capitalizeWords;
 
 class GetData {
   
@@ -18,6 +18,9 @@ class GetData {
   }
 
   getPrank(category: string, firstName: string, lastName: string){
+    firstName = capitalizeName(firstName);
+    lastName = capitalizeName(lastName);
+    
     const endpoint: string = `${apiEndpoints.randomJoke}?exclude[${category}?&firstName=${firstName}&lastName=${lastName}`;
     console.log(endpoint);
     return fetchData(endpoint).then((data) => data.joke)

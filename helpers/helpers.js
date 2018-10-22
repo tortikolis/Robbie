@@ -11,6 +11,13 @@ module.exports = {
             category = 'nerdy';
         }
         return category;
+    },
+    capitalizeWords: (word) => {
+        return word[0] + word.slice(1);
+    },
+    checkIfOnlyLetters: (str) => {
+        const regEx = /^[a-zA-Z\s]*$/;
+        return regEx.test(str);
     }
 };
 //# sourceMappingURL=helpers.js.map
