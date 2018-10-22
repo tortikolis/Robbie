@@ -4,7 +4,7 @@ const greeting = require('./conversations/greeting/greeting');
 const joke = require('./conversations/joke/joke');
 const another = require('./conversations/another/another');
 const endConversation = require('./conversations/endConversation/endConversation');
-//const prank = require('./conversations/prank/prank');
+const prank = require('./conversations/prank/prank');
 
 require('dotenv').config();
 
@@ -19,6 +19,6 @@ const server = require('./server/server')(controller);
 initial(controller);
 greeting(controller);
 joke(controller);
-//prank(controller);
+prank(controller);
 another(controller);
 endConversation(controller);

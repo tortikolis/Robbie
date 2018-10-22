@@ -3,7 +3,7 @@ const convoStrings = {
         'What can I do for you?'],
     initialWelcome: 'Hello, my name is Robbie and I can make you laugh! Welcome!',
     jokeConvo: 'Sure! Do you want random joke or specific one from some of categories:',
-    askCategories: ['explicit', 'nerdy', 'random'],
+    askCategories: ['explicit', 'nerdy'],
     endConvo: 'Anytime! Happy to make your day...',
     prankConvo: {
         category: 'Sure! Choose a joke category for a prank?',

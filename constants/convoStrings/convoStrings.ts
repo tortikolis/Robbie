@@ -7,7 +7,7 @@ const convoStrings: object = {
 
   jokeConvo: 'Sure! Do you want random joke or specific one from some of categories:',
 
-  askCategories: ['explicit', 'nerdy', 'random'],
+  askCategories: ['explicit', 'nerdy'],
 
   endConvo: 'Anytime! Happy to make your day...',
 
