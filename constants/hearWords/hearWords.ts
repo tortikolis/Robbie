@@ -3,6 +3,7 @@ const hearWords: object = {
   joke: ['joke', 'jest', 'fun', 'funny', 'chuck', 'noris'],
   more: ['more', 'another'],
   end: ['ok', 'thanks', 'great'],
+  category: ['explicit', 'nerdy', 'random'],
 };
 
 module.exports = hearWords;

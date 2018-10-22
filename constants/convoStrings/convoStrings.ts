@@ -7,9 +7,17 @@ const convoStrings: object = {
 
   jokeConvo: 'Sure! Do you want random joke or specific one from some of categories:',
 
-  askCategories: ['explicit', 'nerdy'],
+  askCategories: ['explicit', 'nerdy', 'random'],
 
   endConvo: 'Anytime! Happy to make your day...',
+
+  prankConvo: {
+    category: 'Sure! Choose a joke category for a prank?',
+    firstName: 'What’s your friend first name?',
+    badFirstName: 'This does not look like a real name let’s try again. What’s your friend first name?',
+    lastName: 'What’s your friend last name?',
+    
+  }
 }
 
 module.exports = convoStrings;
