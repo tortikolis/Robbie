@@ -15,7 +15,8 @@ Facebook page: https://www.facebook.com/Robbie-488860201621098/
 FACEBOOK_PAGE_ACCESS_TOKEN=(get this when create facebook app)
 VERIFY_TOKEN= Your token
 
-Author: Jovica Krivosija
+# Author
+Jovica Krivosija
 
 ## License
 This project is licensed under the MIT License.
