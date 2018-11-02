@@ -1,7 +1,8 @@
 # Robbie
 **Facebook messenger chat bot**
 
-Facebook chatbot with skill to responde to user with Chuck Norris joke or prank. 
+Facebook chatbot with skill to responde to user with Chuck Norris joke or prank. Bot has been built with Botkit framework.
+
 Facebook page: https://www.facebook.com/Robbie-488860201621098/
 
 ## Getting Started
