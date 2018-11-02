@@ -1,10 +1,10 @@
 # Robbie
-Facebook messenger chat bot
+**Facebook messenger chat bot**
 
 Facebook chatbot with skill to responde to user with Chuck Norris joke or prank. 
 Facebook page: https://www.facebook.com/Robbie-488860201621098/
 
-###Getting Started
+##Getting Started
 
 Get project to your local machine: git clone [this repo]
 Install dependencies: yarn install.
@@ -17,5 +17,5 @@ VERIFY_TOKEN= Your token
 
 Author: Jovica Krivosija
 
-###License
+##License
 This project is licensed under the MIT License.
