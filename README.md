@@ -4,6 +4,7 @@
 Facebook chatbot with skill to responde to user with Chuck Norris joke or prank. Bot has been built with Botkit framework.
 
 Facebook page: https://www.facebook.com/Robbie-488860201621098/
+**Bot is not launched on facebook! It's in developing stage so you won't be able to comunicate with it unless you are Admin or Test user! If you need to test it contact me and I will add you as test user**
 
 ## Getting Started
 
